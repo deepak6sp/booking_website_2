@@ -1,0 +1,12 @@
+<ion-view view-title="Movie selection">
+ 	<ion-content>
+		<label class="item item-input">
+			<input type="text" id="autocomplete" placeholder="Search by movie or actor name"></input>	
+		</label>
+		<ion-list >
+			<ion-radio ng-repeat="theater in movie_theaters">
+				<strong>{{theater.name}}</strong> - {{theater.vicinity}}
+			</ion-radio> 
+		</ion-list>	
+	</ion-content>
+</ion-view>
