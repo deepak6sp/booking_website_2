@@ -4,9 +4,48 @@
 			<input type="text" id="autocomplete" placeholder="Search city"></input>	
 		</label>
 		<ion-list >
-			<ion-radio ng-repeat="theater in movie_theaters">
-				<strong>{{theater.name}}</strong> - {{theater.vicinity}}
-			</ion-radio> 
+			<ion-list>
+		  		<ion-item href="#/detail" >
+		  			<div class="item-thumbnail-left">
+			  		 	<img src="cover.jpg">
+				      	<h2>PVR cinemas</h2>
+				      	<p>33 forum mall</p>
+				    </div>
+				    <div class="item-button-right" >
+			      		<button class="button button-calm">Shows</button>
+			      	</div>
+			    </ion-item>
+			    <ion-item href="#/detail" >
+		  			<div class="item-thumbnail-left">
+			  		 	<img src="cover.jpg">
+				      	<h2>Inox</h2>
+				      	<p>basvangudi</p>
+				    </div>
+				    <div class="item-button-right">
+			      		<button class="button button-calm">Shows</button>
+			      	</div>
+			    </ion-item>
+			    <ion-item href="#/detail" >
+		  			<div class="item-thumbnail-left">
+			  		 	<img src="cover.jpg">
+				      	<h2>Pretty Hate Machine</h2>
+				      	<p>Nine Inch Nails</p>
+				    </div>
+				    <div class="item-button-right">
+			      		<button class="button button-calm">Shows</button>
+			      	</div>
+			    </ion-item>
+			    <ion-item href="#/detail" >
+		  			<div class="item-thumbnail-left">
+			  		 	<img src="cover.jpg">
+				      	<h2>Pretty Hate Machine</h2>
+				      	<p>Nine Inch Nails</p>
+				    </div>
+				    <div class="item-button-right">
+			      		<button class="button button-calm">Shows</button>
+			      	</div>
+			    </ion-item>
+		  	</ion-list>
 		</ion-list>	
 	</ion-content>
 </ion-view>
