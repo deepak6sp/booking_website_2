@@ -72,15 +72,12 @@ angular.module('starter.controllers', [])
  };
 })
 
-.controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
-  ];
+.controller('PlaylistsCtrl', function($scope,$http) {
+  $http.get("http://localhost/bookmovie/bookmovie/public/hello")
+  .then(function(response){
+    $scope.playlists = response.data;
+    console.log(response.data);
+  });
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {

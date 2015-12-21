@@ -4,42 +4,12 @@
 			<input type="text" id="autocomplete" placeholder="Search by movie or actor name"></input>	
 		</label>
 		<ion-list >
-			<ion-list>
+			<ion-list ng-repeat="list in playlists"  >
 		  		<ion-item href="#/detail" >
 		  			<div class="item-thumbnail-left">
 			  		 	<img src="cover.jpg">
-				      	<h2>Pretty Hate Machine</h2>
-				      	<p>Nine Inch Nails</p>
-				    </div>
-				    <div class="item-button-right">
-			      		<button class="button button-calm">Book</button>
-			      	</div>
-			    </ion-item>
-			    <ion-item href="#/detail" >
-		  			<div class="item-thumbnail-left">
-			  		 	<img src="cover.jpg">
-				      	<h2>Pretty Hate Machine</h2>
-				      	<p>Nine Inch Nails</p>
-				    </div>
-				    <div class="item-button-right">
-			      		<button class="button button-calm">Book</button>
-			      	</div>
-			    </ion-item>
-			    <ion-item href="#/detail" >
-		  			<div class="item-thumbnail-left">
-			  		 	<img src="cover.jpg">
-				      	<h2>Pretty Hate Machine</h2>
-				      	<p>Nine Inch Nails</p>
-				    </div>
-				    <div class="item-button-right">
-			      		<button class="button button-calm">Book</button>
-			      	</div>
-			    </ion-item>
-			    <ion-item href="#/detail" >
-		  			<div class="item-thumbnail-left">
-			  		 	<img src="cover.jpg">
-				      	<h2>Pretty Hate Machine</h2>
-				      	<p>Nine Inch Nails</p>
+				      	<h2>{{list.id}}</h2>
+				      	<p>{{list.title}}</p>
 				    </div>
 				    <div class="item-button-right">
 			      		<button class="button button-calm">Book</button>
