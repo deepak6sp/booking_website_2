@@ -72,11 +72,11 @@ angular.module('starter.controllers', [])
  };
 })
 
-.controller('PlaylistsCtrl', function($scope,$http) {
-  $http.get("http://localhost/bookmovie/bookmovie/public/hello")
+.controller('displayScreenCtrl', function($scope,$http) {
+  $http.get("http://localhost/bookmovie/api/public/getCinemas")
   .then(function(response){
-    $scope.playlists = response.data;
-    console.log(response.data);
+    $scope.theaterList = response;
+    console.log(response);
   });
 })
 

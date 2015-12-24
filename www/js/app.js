@@ -65,7 +65,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       views: {
         'menuContent': {
           templateUrl: 'partials/movie_screen_selection.html',
-          controller: 'PlaylistsCtrl'
+          controller: 'displayScreenCtrl'
         }
       }
     })
